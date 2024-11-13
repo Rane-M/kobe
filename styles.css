@@ -1,0 +1,129 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #1c1c1c;
+    color: #f3f3f3;
+    line-height: 1.6;
+    transition: background-color 0.3s ease;
+    background-image: url('LA.jpg');
+    background-size: stretch;
+    background-attachment: fixed;
+}
+
+.header {
+    text-align: center;
+    background-color: #000;
+    padding: 40px;
+    border-bottom: 5px solid #6d4c16;
+}
+
+.header h1 {
+    font-size: 3em;
+    color: #ffd700;
+    margin-bottom: 20pxpx;
+    font-family: 'Palatino Linotype', 'Book Atiqua', Palatino, serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.header img {
+    width: 500px;
+    height: auto;
+    border-radius: 35%;
+    border: 3px solid #ffd700;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0,3s ease;
+}
+
+.header img:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.7);
+}
+
+main {
+    padding: 30px;
+    background-color: #333;
+    margin: 20px auto;
+    max-width: 900px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.section {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #444;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.section h2 {
+    font-size: 2.4em;
+    color: #ffd700;
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: 'Garamond', serif;
+    letter-spacing: 1px;
+}
+
+.section p {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.section ul {
+    list-style-type: none;
+    padding-left: none;
+}
+
+.section ul li {
+    background-color: #555;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-left: 5px solid #ffd700;
+    font-size: 1.1em;
+    border-radius: 5px;
+    font-family: 'Garamond', serif;
+    transition: background-color 0.3s ease;
+}
+
+.section ul li:hover {
+    background-color: #666;
+}
+
+.section h3 {
+    font-size: 1.8em;
+    color: #ffd700;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #000;
+    border-top: 5px solid #6d4c41;
+    box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.footer p {
+    color: #f3f3f3;
+    font-size: 1.2em;
+}
+
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 2.2em;
+    }
+
+    .header img {
+        width: 150px;
+    }
+
+    .section h2, section h3 {
+        font-size: 1.8em;
+    }
+
+    .section p, section ul li {
+        font-size: 1em;
+    }
+}
